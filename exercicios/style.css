@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+}
+
+* {
+    margin: 0px;
+}
+
+h1 {
+    background-image: linear-gradient(to right, blue, transparent );
+    color: white;
+    font-family: cursive;
+}
+
+p {
+    background-color: white;
+    padding: 10px;
+    
+}
