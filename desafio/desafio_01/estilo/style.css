@@ -92,21 +92,57 @@ main {
 }
 
 main h1 {
+    background-image: linear-gradient(to right, var(--color2), transparent);
     color: var(--color5);
     font-family: var(--font-android);
+    font-size: 1.6em;
+    text-indent: 10px;
 }
 
 main h2 {
+    background-image: linear-gradient(to right, var(--color1), transparent);
     color: var(--color4);
     font-family: var(--font-android);
+    font-size: 1.5em;
+    text-indent: 10px;
 }
 
 main img {
     width: 100%;
 }
 
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--color5);
+    font-weight: bold;
+    padding: 2px 6px;
+
+}
+
+main a {
+    background-color: var(--color1);
+    color: var(--color5);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--color2);
+    background-color: var(--color5);
+}
+
 main .pequena {
-    width: 50%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
