@@ -32,20 +32,50 @@ body {
 }
 
 header {
-    background-color: var(--color4);
+    background-image: linear-gradient(to bottom, var(--color3), var(--color5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 50px;
 }
 
 header > h1 {
     color: white;
     font-family: var(--font-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
 }
 
 header > p {
     color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.3em;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.247);
 }
 
 nav {
     background-color: var(--color5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.377);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: var(--color2);
+    color: var(--color5);
+    text-decoration: underline;
+    transition: .5s;
 }
 
 main {
@@ -53,6 +83,12 @@ main {
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
 }
 
 main h1 {
@@ -69,7 +105,14 @@ main img {
     width: 100%;
 }
 
+main .pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
 footer {
     background-color: var(--color5);
     color: white;
+    
 }
