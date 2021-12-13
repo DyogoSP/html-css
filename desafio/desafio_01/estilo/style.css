@@ -133,6 +133,7 @@ main a {
     font-weight: bold;
     padding: 5px;
     border-radius: 20px;
+    
 }
 
 main a:hover {
@@ -147,8 +148,53 @@ main .pequena {
     margin: auto;
 }
 
+aside {
+    background-color: var(--color2);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.199);
+}
+
+aside h3 {
+    background-color: var(--color4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+aside > ul > li {
+    padding-bottom: 5px;
+    color: white;
+}
+
+abbr {
+    text-decoration: none;
+}
+
 footer {
     background-color: var(--color5);
     color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--color1);
+    text-decoration: underline;
     
 }
