@@ -5,6 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 900px;
+            height: 400px;
+            border-collapse: collapse;
+            
+        }
+
+        thead {
+             height: 100px;
+             width: 900px;
+             text-decoration: underline;
+             font-size: 1.5em;
+             color: darkred;
+             
+
+        }
+
+        th {
+            border: 3px solid orangered;
+        }
+
+        tr {
+            background-color: royalblue;
+        }
+
+        td {
+            border: 2px solid orangered;
+            padding: 10px;
+            color: greenyellow;
+        }
+    </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
@@ -17,16 +52,46 @@
                 TABLE DATA = dados de tabales
      -->
     <table>
-        <tr> <!-- Primeira linha -->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Cariocas</th>
+                <th>Paulistas</th>
+                <th>MG/RS</th>
+                <th>Aleatorios</th>
+                <th>Subiram</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> <!-- Primeira linha -->
+                <td>A1  VASCO</td>
+                <td>B1  CORINTIANS</td>
+                <td>C1  ATLETICO MG</td>
+                <td>D1  ATLETICO PR</td>
+                <td>E1  CHAPECOENSE</td>
+            </tr>
+            <tr>
+                <td>A2  FLAMENGO</td>
+                <td>B2  SÃO PAULO</td>
+                <td>C2  CRUZEIRO</td>
+                <td>D2  FORTALEZA</td>
+                <td>E2  AVAI</td>
+            </tr>
+            <tr>
+                <td>A3  FLUMINENSE</td>
+                <td>B3  PALMEIRAS</td>
+                <td>C3  GREMIO</td>
+                <td>D3  SPORT</td>
+                <td>E3  JOENVILE</td>
+            </tr>
+            <tr>
+                <td>A4  BOTAFOGO</td>
+                <td>B4  SANTOS</td>
+                <td>C4  INTERNACIONAL</td>
+                <td>D4  CEARA</td>
+                <td>E4  AMERICA MG</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
