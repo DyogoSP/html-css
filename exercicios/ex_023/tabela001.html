@@ -11,38 +11,42 @@
         }
         table {
             width: 900px;
-            height: 400px;
+            height: 100px;
             border-collapse: collapse;
             
         }
 
         thead {
-             height: 100px;
+             height: 10px;
              width: 900px;
              text-decoration: underline;
              font-size: 1.5em;
-             color: darkred;
-             
+             color: black;
+        }
 
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         th {
-            border: 3px solid orangered;
+            border: 2px solid black;
+            background-color: rgb(77, 77, 77);
+            color: white;
         }
 
         tr {
-            background-color: royalblue;
+            background-color: white;
         }
 
         td {
-            border: 2px solid orangered;
+            border: 2px solid black;
             padding: 10px;
-            color: greenyellow;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
+    <h1>Tabela dos Times Brasileiros</h1>
 
     <!-- 
         HIERARQUIA DE TABELAS (simple)
@@ -54,11 +58,11 @@
     <table>
         <thead>
             <tr>
-                <th>Cariocas</th>
-                <th>Paulistas</th>
-                <th>MG/RS</th>
-                <th>Aleatorios</th>
-                <th>Subiram</th>
+                <th scope="col">Cariocas</th>
+                <th scope="col">Paulistas</th>
+                <th scope="col">MG/RS</th>
+                <th scope="col">Aleatorios</th>
+                <th scope="col">Subiram</th>
             </tr>
         </thead>
 
@@ -92,6 +96,14 @@
                 <td>E4  AMERICA MG</td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <th scope="col">Total de Pontos = 0</th>
+            <th scope="col">Total de Pontos = 0</th>
+            <th scope="col">Total de Pontos = 0</th>
+            <th scope="col">Total de Pontos = 0</th>
+            <th scope="col">Total de Pontos = 0</th>
+        </tfoot>
     </table>
 </body>
 </html>
